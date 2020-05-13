@@ -9,36 +9,52 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="Assets/style.css"/>
+    <link rel="stylesheet" href="Assets/style.css" />
     <title>Weather Overground</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
       <span class="navbar-brand navbar-header mb-0 h1">Weather</span>
     </nav>
+    <br>
     <main class="container">
-        <div class="row">
-            <!-- City Search Bar and History Selector -->
-            <aside class="col-md-3">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="New City" aria-label="New City">
-                    <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
-                    </div>
-                  </div>
-                  
-            </aside>
-            <main class="col-md-9">
-                <!-- Main City Weather Report -->
-                <article class="row">
-
-                </article>
-                <!-- Insert Cards for 5 Day Forcast -->
-                <section class="row">
-
-                </section>
-            </main>
+      <div class="row">
+        <!-- City Search Bar and History Selector -->
+        <aside id="searchbar" class="col-md-3 card">
+          <div class="card-body">
+          <h4>Search for a City:</h4>
+          <br />
+          <form id="cityForm">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="New City"
+                aria-label="New City"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="submit"
+                id="newCity"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+          <ul class="list-group list-group-flush">
+            <!-- <li class="list-group-item">Cras justo odio</li> -->
+            <!-- <li class="list-group-item">Dapibus ac facilisis in</li> -->
+            <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+          </ul>
+        </aside>
         </div>
+        <main class="col-md-9">
+          <!-- Main City Weather Report -->
+          <article class="row"></article>
+          <!-- Insert Cards for 5 Day Forcast -->
+          <section class="row"></section>
+        </main>
+      </div>
     </main>
   </body>
 </html>
