@@ -20,7 +20,7 @@
     <div class="container">
       <div class="row">
         <!-- City Search Bar and History Selector -->
-        <aside id="searchbar" class="col-md-3 card">
+        <aside id="searchbar" class="col-md-3 card bg-dark text-light">
           <h4 class="card-header">Search for a City:</h4>
           <div class="card-body">
           <form id="cityForm">
@@ -32,7 +32,7 @@
                 placeholder="New City"
               />
               <button
-                class="btn btn-outline-secondary"
+                class="btn btn-outline-light btn-success"
                 type="submit"
                 id="newCityBtn"
               >
@@ -40,7 +40,7 @@
               </button>
             </div>
           </form>
-          <ul id="pastSearches" class="list-group list-group-flush">
+          <ul id="pastSearches" class="list-group list-group-flush bg-dark text-light">
             <!-- <li class="list-group-item">Cras justo odio</li> -->
             <!-- <li class="list-group-item">Dapibus ac facilisis in</li> -->
             <!-- <li class="list-group-item">Vestibulum at eros</li> -->
@@ -49,34 +49,34 @@
         <main class="col-md-9">
           <!-- Main City Weather Report -->
           <article class="row card">
-            <h3 class="card-header"><span id="cityName">City</span><span id="date"></span> </h3>
+            <h3 class="card-header bg-primary text-light"><span id="cityName">City</span><span id="date"></span> </h3>
             <div class="card-body">
               <p class="card-text">Temperature: <span id="temp"></span> °F</p>
               <p class="card-text">Humidity: <span id="humid"></span>%</p>
               <p class="card-text">Wind Speed: <span id="windSpeed"></span> MPH</p>
-              <p class="card-text">UV Index: <span id="uvIndex" class="font-weight-bold"></span></p>
+              <p class="card-text">UV Index: <span id="uvIndex"></span></p>
             </div>
           </article>
           <!-- Insert Cards for 5 Day Forcast -->
           <h3>5 Day Forcast</h3>
           <section class="row">
-            <div class="card 5dayForcast col" style="width: auto;">
+            <div class="card 5dayForcast col bg-info text-light" style="width: auto;">
               <div id="forecast0" class="card-body small-card">
               </div>
             </div>
-            <div class="card 5dayForcast col" style="width: auto;">
+            <div class="card 5dayForcast col bg-info text-light" style="width: auto;">
               <div id="forecast1" class="card-body small-card">
               </div>
             </div>
-            <div class="card 5dayForcast col" style="width: auto;">
+            <div class="card 5dayForcast col bg-info text-light" style="width: auto;">
               <div id="forecast2"class="card-body small-card">
               </div>
             </div>
-            <div class="card 5dayForcast col" style="width: auto;">
+            <div class="card 5dayForcast col bg-info text-light" style="width: auto;">
               <div id="forecast3" class="card-body small-card">
               </div>
             </div>
-            <div class="card 5dayForcast col" style="width: auto;">
+            <div class="card 5dayForcast col bg-info text-light" style="width: auto;">
               <div id="forecast4" class="card-body small-card">
               </div>
             </div>
