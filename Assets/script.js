@@ -68,7 +68,8 @@ function displayWeather(city) {
         url: queryURLforecast,
         method: "GET"
     }).then(function(response) {
-        console.log(response)
+        // console.log(response)
+        
         // Runs 5 times, one for each box
         for (i=0; i<5; i++) {
             $("#forecast"+i).empty()
@@ -82,7 +83,7 @@ function displayWeather(city) {
             $("#forecast"+i).append($("<p>").text("Temp: " + response.list[newIndex].main.temp + "°F"))
             $("#forecast"+i).append($("<p>").text("Humidity: " + response.list[newIndex].main.humidity + "%"))
 
-            console.log(response.list[newIndex].main.temp)
+            // console.log(response.list[newIndex].main.temp)
         }
 
     })
@@ -102,9 +103,9 @@ $("#cityForm").on("submit", function (event) {
 
     $("#newCity").val("");
 
-    console.log(pastSearches);
+    // console.log(pastSearches);
 
-    console.log(JSON.parse(localStorage.getItem("searchHistory")));
+    // console.log(JSON.parse(localStorage.getItem("searchHistory")));
 
     renderSearches();
 
