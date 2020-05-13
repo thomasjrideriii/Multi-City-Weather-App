@@ -8,3 +8,7 @@
     float: none;
     font-size: 48px;
 }
+
+.small-card {
+    padding: 5px;
+}
