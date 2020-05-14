@@ -69,7 +69,7 @@ function displayWeather(city) {
         method: "GET"
     }).then(function(response) {
         // console.log(response)
-        
+
         // Runs 5 times, one for each box
         for (i=0; i<5; i++) {
             $("#forecast"+i).empty()
@@ -79,7 +79,7 @@ function displayWeather(city) {
             // gives us a search value for the incoming API array.
             var newIndex = i * 8 + 6;
             // console.log(response.list[newIndex])
-            $("#forecast"+i).append($("<img>").attr("src", "http://openweathermap.org/img/wn/" + response.list[newIndex].weather[0].icon + "@2x.png"))
+            $("#forecast"+i).append($("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[newIndex].weather[0].icon + "@2x.png"))
             $("#forecast"+i).append($("<p>").text("Temp: " + response.list[newIndex].main.temp + "°F"))
             $("#forecast"+i).append($("<p>").text("Humidity: " + response.list[newIndex].main.humidity + "%"))
 
