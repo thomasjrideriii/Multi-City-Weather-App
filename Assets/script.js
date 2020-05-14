@@ -40,7 +40,7 @@ function displayWeather(city) {
 
         // Takes lat and lon from previous object and finds the UV Index.
         
-        queryURLuv = "http://api.openweathermap.org/data/2.5/uvi?appid=4e48182efcaca931751b0b92eccfb27d&lat=" + cityLat + "&lon=" + cityLon
+        queryURLuv = "https://api.openweathermap.org/data/2.5/uvi?appid=4e48182efcaca931751b0b92eccfb27d&lat=" + cityLat + "&lon=" + cityLon
         
         $.ajax({
             url: queryURLuv,
